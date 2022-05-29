@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart Page</title>
+
+    <link href="css/cart.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+
+<body>
+       
+    <header>
+        <div class="container">
+            <div class="head-grid">
+                <div class="head-grid-item">
+                    <strong class="logo">
+                        <a href="index.html">BEWAKOOF</a>
+                    </strong>
+                </div>
+                <div class="head-grid-item">
+                    <a href="index.html">Home</a>
+                    <!-- <a href="#">Product</a> -->
+                    <a href="about.html">About Us</a>
+                    <!-- <a href="contactus.html">Contact Us</a> -->
+                    <a href="login-registration.html" onclick="clearSession()">Log Out</a>
+                    <!-- <a href="#">Cart</a>  -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container" id="gridContainer">
+            <!-- <div class="grid-container2">
+                <div class="grid-item2">
+                    <img src="images/img3.png" class="p-img"/> 
+                </div>
+                <div class="grid-item2"> 
+                    <h4>Product One</h4> 
+                </div>
+                <div class="grid-item2">  
+                    <div class="number">
+                        <span class="minus">-</span>
+                        <input type="text" value="1"/>
+                        <span class="plus">+</span>
+                    </div>
+                </div>
+                <div class="grid-item2"> 
+                    <strong><span> $585,00</span></strong> 
+                </div>
+                <div class="grid-item2">
+                    <a href=""><img src="images/delete.png" class="delete-img"/></a> 
+                </div> 
+            </div> -->
+
+            
+        </div>
+        <div class="container">
+            <p class="total-text">
+                Total: <strong id="total_amount">$0.00</strong>                
+            </p>
+            <a href="index.html" class="check-btn" onclick="clearProductToCart()">Checkout</a>
+        </div>
+    </section>
+       
+    <footer>
+        <p>Created by <a href="index.html" >THE BROGRAMMERS</a>.</p> 
+    </footer>
+ 
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
+

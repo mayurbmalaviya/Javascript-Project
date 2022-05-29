@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="head-grid">
+                <div class="head-grid-item">
+                    <strong class="logo">
+                        <a href="#">BEWAKOOF</a>
+                    </strong>
+                </div>
+                <!-- <div class="head-grid-item">
+                    <form onsubmit="searchProducts('value');">
+                        <input type="text" id="search" placeholder="Search" />
+                    </form>
+                </div> -->
+                <div class="head-grid-item">
+                    <a href="index.html">Home</a>
+                    <!-- <a href="#">Product</a> -->
+                    <a href="about.html">About Us</a>
+                    <!-- <a href="#">Contact Us</a> -->
+                    <a href="login-registration.html" onclick="clearSession()">Log Out</a>
+                    <a href="cart.html">
+                        <span class="add-cart-icon">
+                            <img src="images/shopping-cart2.png" />
+                            <small id="total_count">0</small>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+             <div class="welcome-box">
+                 <h1>Welcome !</h1>
+                 <h4 id="userName"></h4> 
+             </div>
+        </div>
+    </section>
+
+    <section class="pro-about">
+        <div class="container">
+            <div class="row">
+                <div class="title-head">
+                    <h2>Best Arrival</h2>
+                </div>
+                <div class="ab-grid">
+                    <div class="ab-grid-item">  
+                        <img src="images/bn-02.jpg" /> 
+                        <div class="ab-text">
+                            <h4>Women's Collection</h1>
+                            <h1>Up To 85%</h4>
+                            <a>Shop Now</a>
+                        </div>  
+                    </div>
+                    <div class="ab-grid-item">  
+                        <img src="images/pr-big-26.jpg" /> 
+                        <div class="ab-text">
+                            <h4>Summer Sale</h1>
+                            <h1>Sale 65%</h4>
+                            <a>Shop Now</a>
+                        </div>  
+                    </div>
+                    <div class="ab-grid-item">  
+                        <img src="images/cat-men.jpg" /> 
+                        <div class="ab-text">
+                            <h4>Men's Collection</h1>
+                            <h1>Sale 70%</h4>
+                            <a>Shop Now</a>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title-head">
+                <h2>Latest Product</h2>
+                <p>Your Latest and favorite Product...</p>
+            </div>
+            <!-- 
+                Dynamic section for the product
+             -->
+            <div class="grid-container" id="product_section"> 
+                <!-- <div class="grid-item">
+                    <img src="images/img2.png" class="pro-img">
+                    <h4>Guided Trips</h4>
+                    <strong><span> $685,00</span></strong>
+                    <a href="" onclick="addToCartProduct()">
+                        <img src="images/shopping-cart2.png" class="cart-img" />
+                        <span>Add to cart</span>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="best-saller">
+        <div class="container">
+            <dv class="row">
+                <div class="title-head">
+                    <h2>Best Saller</h2>
+                    <p>Best Saller for Your favorite shopping websites...</p>
+                </div>
+                <div class="best-saller-grid">
+                    <div class="best-saller-item">  
+                        <img src="images/grid-banner-01.jpg" /> 
+                        <div class="best-saller-text">
+                            <h1>Galaxy S10 Lite</h1>
+                            <h4>Save up to 25%</h4>
+                            <a>Buy Now</a>
+                        </div>  
+                    </div> 
+                    <div class="best-saller-item">  
+                        <img src="images/grid-banner-02.jpg" /> 
+                        <div class="best-saller-text">
+                            <h1>New SmartWatch</h1>
+                            <h4>Save up to 35%</h4>
+                            <a>Buy Now</a>
+                        </div>  
+                    </div> 
+                    <div class="best-saller-item">  
+                        <img src="images/grid-banner-03.jpg" /> 
+                        <div class="best-saller-text">
+                            <h1>Dell XPS 2020</h1>
+                            <h4>Save up to 55%</h4>
+                            <a>Buy Now</a>
+                        </div>  
+                    </div> 
+                    <div class="best-saller-item">  
+                        <img src="images/grid-banner-04.jpg" /> 
+                        <div class="best-saller-text">
+                            <h1>Save up to</h1>
+                            <h4>Plus earn 2% back in Kalles</h4>
+                            <a>Buy Now</a>
+                        </div>  
+                    </div>  
+                </div>
+            </dv>
+        </div>
+    </section>
+
+
+       
+    <footer>
+        <div class="container">
+            <div class="fo-grid">
+                <div class="fo-grid-item">
+                    <p>
+                        <a href="https://www.termsandconditionsgenerator.com/live.php?token=6q4AgN81V5Mko6ZxI4PAq2hJdegOLEQD" target="_blank" >Terms & Condition | </a>
+                        <a href="#">Privacy Policy | </a>
+                        <a href="contactus.html">Contact Us | </a>
+                        <a href="about.html">About Us</a>
+                    </p>
+                </div>
+                <div class="fo-grid-item text-right">
+                     <a href="" class="so-cta">
+                         <img src="images/fb.svg" alt="social_media">
+                     </a>
+                     <a href="" class="so-cta">
+                        <img src="images/twitter.svg" alt="social_media">
+                    </a>
+                    <a href="" class="so-cta">
+                        <img src="images/insta.svg" alt="social_media">
+                    </a>
+                    <a href="" class="so-cta">
+                        <img src="images/linkeding.svg" alt="social_media">
+                    </a>
+                </div>    
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/homepage.js"></script>
+</body>
+
+</html>
+
